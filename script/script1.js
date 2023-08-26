@@ -3,7 +3,7 @@
 const imgElement = document.createElement('img');
 
 // Defina os atributos da imagem
-imgElement.src = '/imagens/imagens_geral/mel.png';
+imgElement.src = 'https://images2.imgbox.com/f5/bf/g3qwXWBI_o.png';
 imgElement.alt = 'Imagem Adicionada com JavaScript';
 
 // Adicione a classe para estilo (opcional)
@@ -17,15 +17,21 @@ var botao = document.querySelector("#casa")
 var botao2 = document.querySelector("#flor")
 
 
-if(botao2.addEventListener("mouseover", function(){
+botao2.addEventListener("mouseover", function(){
+
     botao.addEventListener("click", function(){
         // Adicione a imagem ao contêiner
         imageContainer.appendChild(imgElement);
         setTimeout(function() {
+            
             imgElement.remove();
-          }, 1000);
+
+            }, 1000);
     })
-}));
+});
+
+
+
 
 
 
